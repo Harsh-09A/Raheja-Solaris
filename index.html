@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raheja Solaris</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/logo/favicon.jpg" sizes="16x16" />
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"></script>
+
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+
+    <!-- Fancy Box CDN -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+    <!-- EmailJS CDN -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="js/mail.js"></script>
+
+    <!-- Custom CSS & JS  -->
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/script.js"></script>
+  </head>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#main-navbar"
+    data-bs-root-margin="0px 0px -50%"
+    data-bs-smooth-scroll="true"
+    class="scrollspy"
+    tabindex="0"
+    data-offset="1">
+    <header class="fixed-top shadow-sm">
+      <nav
+        class="navbar navbar-expand-lg mx-auto"
+        style="background-color: #ffffff"
+        id="main-navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="img/logo/logo.png"
+              alt="Logo"
+              height="50px"
+              style="padding-left: 10%" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"> </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#slider_section">
+                  <i class="fa-solid fa-house nav-icon"></i>
+                  <span class="d-sm-inline"> Home </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#overview_section">
+                  <i class="fa-solid fa-coins nav-icon"></i>
+                  <span class="d-sm-inline"> Overview </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery_section">
+                  <i class="fa-solid fa-images nav-icon"></i>
+                  <span class="d-sm-inline"> Gallery </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#configuration_section">
+                  <i class="fa-solid fa-sliders nav-icon"></i>
+                  <span class="d-sm-inline"> Configuration </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#amenities_section">
+                  <i class="fa-solid fa-wifi nav-icon"></i>
+                  <span class="d-sm-inline"> Amenities </span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#location_section">
+                  <i class="fa-solid fa-map-location nav-icon"></i>
+                  <span class="d-sm-inline"> Location </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about_section">
+                  <i class="fa-solid fa-user nav-icon"></i>
+                  <span class="d-sm-inline"> About Us </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Slider Section -->
+      <section id="slider_section">
+        <!-- Desktop Slider -->
+        <div
+          id="carousel-Indicators"
+          class="carousel slide desktop-slider"
+          data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carousel-Indicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-Indicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                class="d-block w-100 banner1"
+                width="100%"
+                src="img/banners/desktop_banner1.webp"
+                alt="Banner1" />
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100 banner2"
+                width="100%"
+                src="img/banners/desktop_banner2.webp"
+                alt="Banner2" />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carousel-Indicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carousel-Indicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <!--Overview Section  -->
+      <section id="overview_section" class="container p-4 mt-3">
+        <h2 class="section-heading text-center text-uppercase">
+          RAHEJA SOLARIS
+        </h2>
+
+        <div class="mt-4 text-center">
+          <p class="overview-para mt-3">
+            Experience luxury living at Raheja Solaris 3, a distinguished
+            segment of the Raheja District township in Juinagar, Navi Mumbai.
+            This landmark features 2, 3, and 4 BHK apartments with modern
+            interiors, efficient layouts, and premium fittings. The exclusive
+            'Upper Crest' edition offers 3 & 4 BHK residences on higher floors
+            and includes spacious sun decks. Residents can also enjoy
+            world-class amenities such as a gymnasium, swimming pool, children's
+            play area, jogging track, multipurpose court, indoor games area,
+            yoga zone, and more.
+
+            <br /><br />
+            <span class="overview_p2">
+              The prime location of Juinagar connects you to the city's top
+              educational, healthcare, and recreational facilities. Nearby are
+              Ryan International School, St. Xavier’s High School, SIES College,
+              DY Patil University, DY Patil Hospital, New Millennium Hospital,
+              Inorbit Mall, Raghuleela Mall, and Dmart, all just minutes away.
+              The Sion Panvel Highway and Thane Belapur Road provide quick
+              citywide connectivity. Additionally, the Juinagar railway station
+              is within an 8-minute radius. Raheja Solaris offers the perfect
+              blend of nature and the best urban conveniences of Navi Mumbai.
+            </span>
+          </p>
+          <button
+            class="btn btn-outline-dark download_btn text-center"
+            data-bs-toggle="modal"
+            data-bs-target="#popupModal">
+            <i class="fa-solid fa-download nav-icon"></i> Download Brochure
+          </button>
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+
+      <!-- Configuration Section -->
+      <section id="configuration_section" class="container p-4 mt-3">
+        <h2 class="section-heading">Configuration</h2>
+
+        <div class="location_features_section m-3">
+          <div>
+            <!-- Nav Links Confi -->
+            <ul class="nav nav-pills mb-3" id="pills-tabloc" role="tablist">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-uppercase ami-tab active"
+                  id="pills-loc-0"
+                  data-bs-toggle="pill"
+                  data-bs-target="#loc-0"
+                  role="tab"
+                  aria-controls="loc-0"
+                  aria-selected="true">
+                  1 Bedroom
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link text-uppercase ami-tab"
+                  id="pills-loc-1"
+                  data-bs-toggle="pill"
+                  data-bs-target="#loc-1"
+                  role="tab"
+                  aria-controls="loc-1"
+                  aria-selected="false">
+                  1.5 Bedroom
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link text-uppercase ami-tab"
+                  id="pills-loc-2"
+                  data-bs-toggle="pill"
+                  data-bs-target="#loc-2"
+                  role="tab"
+                  aria-controls="loc-2"
+                  aria-selected="false">
+                  2 Bedroom
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Features Tab Content -->
+          <div class="tab-content" id="pills-tablocContent">
+            <div
+              class="tab-pane fade show active"
+              id="loc-0"
+              role="tabpanel"
+              aria-labelledby="pills-loc-0"
+              tabindex="0">
+              <!-- 1 BHK  -->
+              <div class="container plans_cont card">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <img
+                      class="img-fluid floor-plan"
+                      src="img/plans/1br_547sqft.jpg"
+                      alt="" />
+                  </div>
+                  <div class="col-12 col-md-6 mt-5 floor-plan-details">
+                    <h3>1 Bedroom Apartments</h3>
+                    <p>
+                      <img
+                        class="total"
+                        src="img/extras/total.svg"
+                        alt=""
+                        height="28px" />
+                      <b>Total: </b> 547sqft
+                    </p>
+                    <p>
+                      <button
+                        class="btn btn-outline-dark download_btn text-center"
+                        data-bs-toggle="modal"
+                        data-bs-target="#popupModal">
+                        <i class="fa-solid fa-download nav-icon"></i> Download
+                        Brochure
+                      </button>
+                      <br />
+                      <br />
+                      <button
+                        class="btn btn-outline-dark download_btn text-center"
+                        data-bs-toggle="modal"
+                        data-bs-target="#popupModal">
+                        <i class="fa-solid fa-folder-open nav-icon"></i> Open
+                        All Floor Plans
+                      </button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="loc-1"
+              role="tabpanel"
+              aria-labelledby="pills-loc-1"
+              tabindex="1">
+              <!-- 1.5 BHK  -->
+              <div class="container plans_cont card">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <img
+                      class="img-fluid floor-plan"
+                      src="img/plans/1_5br_697sqft.jpg"
+                      alt="" />
+                  </div>
+                  <div class="col-12 col-md-6 mt-5 floor-plan-details">
+                    <h3>1.5 Bedroom Apartments</h3>
+                    <p>
+                      <img
+                        class="total"
+                        src="img/extras/total.svg"
+                        alt=""
+                        height="28px" />
+                      <b>Total: </b> 697sqft
+                    </p>
+                    <p>
+                      <button
+                        class="btn btn-outline-dark download_btn text-center"
+                        data-bs-toggle="modal"
+                        data-bs-target="#popupModal">
+                        <i class="fa-solid fa-download nav-icon"></i> Download
+                        Brochure
+                      </button>
+                      <br />
+                      <br />
+                      <button
+                        class="btn btn-outline-dark download_btn text-center"
+                        data-bs-toggle="modal"
+                        data-bs-target="#popupModal">
+                        <i class="fa-solid fa-folder-open nav-icon"></i> Open
+                        All Floor Plans
+                      </button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="tab-pane fade"
+              id="loc-2"
+              role="tabpanel"
+              aria-labelledby="pills-loc-2"
+              tabindex="2">
+              <!-- 1.5 BHK  -->
+              <div class="container plans_cont card">
+                <div class="row">
+                  <div class="col-12 col-md-6">
+                    <img
+                      class="img-fluid floor-plan"
+                      src="img/plans/2br_988sqft.jpg"
+                      alt="" />
+                  </div>
+                  <div class="col-12 col-md-6 mt-5 floor-plan-details">
+                    <h3>2 Bedroom Apartments</h3>
+                    <p>
+                      <img
+                        class="total"
+                        src="img/extras/total.svg"
+                        alt=""
+                        height="28px" />
+                      <b>Total: </b> 988sqft
+                    </p>
+                    <p>
+                      <button
+                        class="btn btn-outline-dark download_btn text-center"
+                        data-bs-toggle="modal"
+                        data-bs-target="#popupModal">
+                        <i class="fa-solid fa-download nav-icon"></i> Download
+                        Brochure
+                      </button>
+                      <br />
+                      <br />
+                      <button
+                        class="btn btn-outline-dark download_btn text-center"
+                        data-bs-toggle="modal"
+                        data-bs-target="#popupModal">
+                        <i class="fa-solid fa-folder-open nav-icon"></i> Open
+                        All Floor Plans
+                      </button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Amenities Section -->
+      <section id="amenities_section" class="container p-4 mt-3">
+        <div>
+          <h2 class="section-heading">Amenities</h2>
+        </div>
+
+        <div class="section-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-3">
+                <div class="thumbnails">
+                  <img
+                    src="img/amenities/basketball.jpg"
+                    alt="digital portrait of Gemma Arterton as Gretel"
+                    class="img-fluid" />
+                  <div class="black"></div>
+                  <div class="title">basketball Court</div>
+                </div>
+              </div>
+              <div class="col-12 col-md-3">
+                <div class="thumbnails">
+                  <img src="img/amenities/cafe.jpg" alt="" class="img-fluid" />
+                  <div class="black"></div>
+                  <div class="title">Cafe</div>
+                </div>
+              </div>
+              <div class="col-12 col-md-3">
+                <div class="thumbnails">
+                  <img
+                    src="img/amenities/gym.jpg"
+                    alt="digital portrait of woman holding her face with a red background"
+                    class="img-fluid" />
+                  <div class="black"></div>
+                  <div class="title">gymnasium</div>
+                </div>
+              </div>
+              <div class="col-12 col-md-3">
+                <div class="thumbnails">
+                  <img
+                    src="img/amenities/kids.jpg"
+                    alt="digital portrait of Gemma Arterton as Gretel"
+                    class="img-fluid" />
+                  <div class="black"></div>
+                  <div class="title">Kid's play area</div>
+                </div>
+              </div>
+              <div class="col-12 col-md-3">
+                <div class="thumbnails">
+                  <img
+                    src="img/amenities/security.webp"
+                    alt="digital portrait of Gemma Arterton as Gretel"
+                    class="img-fluid" />
+                  <div class="black"></div>
+                  <div class="title">24 x 7 security</div>
+                </div>
+              </div>
+              <div class="col-12 col-md-3">
+                <div class="thumbnails">
+                  <img
+                    src="img/amenities/swimming.jpg"
+                    alt="digital portrait of Gemma Arterton as Gretel"
+                    class="img-fluid" />
+                  <div class="black"></div>
+                  <div class="title">swimming Pool</div>
+                </div>
+              </div>
+              <div class="col-12 col-md-3">
+                <div class="thumbnails">
+                  <img
+                    src="img/amenities/jogging.jpg"
+                    alt="digital portrait of Gemma Arterton as Gretel"
+                    class="img-fluid" />
+                  <div class="black"></div>
+                  <div class="title">Jogging Track</div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-3">
+                <div class="thumbnails">
+                  <img
+                    src="img/amenities/shopping.jpeg"
+                    alt="digital portrait of Gemma Arterton as Gretel"
+                    class="img-fluid" />
+                  <div class="black"></div>
+                  <div class="title">shopping Center</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Location Section -->
+      <section id="location_section" class="container p-4 mt-3 mb-3">
+        <div>
+          <h2 class="section-heading">NEARBY LOCATIONS</h2>
+        </div>
+
+        <div class="container">
+          <div class="row mt-4">
+            <div class="col-12 col-md-6">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.5596182404197!2d55.24666537483262!3d25.049014937687733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6f0011c99257%3A0x13f3954d56b62022!2sSobha%20Orbis!5e0!3m2!1sen!2sin!4v1712310637577!5m2!1sen!2sin"
+                width="100%"
+                height="400px"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="col">
+              <div class="mt-2 loc_features">
+                <h4>CONNECTIVITY</h4>
+                <ul>
+                  <li>
+                    <span><i class="fa-solid fa-location-dot"></i></span>
+                    22 Minutes to Downtown Dubai
+                  </li>
+                  <li>
+                    <span><i class="fa-solid fa-location-dot"></i></span>
+                    16 Minutes to Dubai Marina
+                  </li>
+                  <li>
+                    <span><i class="fa-solid fa-location-dot"></i></span>
+                    30 Minutes to DXB Airport
+                  </li>
+                  <li>
+                    <span><i class="fa-solid fa-location-dot"></i></span>
+                    25 Minutes to DWC Airport
+                  </li>
+                  <li>
+                    <span><i class="fa-solid fa-location-dot"></i></span>
+                    10 minutes to Dubai Autodrome,
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-12 col-md-6">
+              <div class="mt-2 loc_features">
+                <h4>About Location</h4>
+                <p>
+                  SOBHA ORBIS offers easy access to Mohammed bin Zayed Road and
+                  Al Qudra Road, ensuring seamless connectivity with the rest of
+                  Dubai. As a result, Dubai International Airport, Business Bay
+                  and Downtown Dubai can be reached within a radius of 30
+                  minutes by car.
+                  <br /><br />
+                  Those who prefer public transport can take advantage of
+                  several bus stations nearby, including Motor City/Uptown
+                  Appartments 1 and Motor City/Uptown Appartments 2.
+                  <br /><br />
+                  Within walking distance of SOBHA ORBIS are many social
+                  infrastructure facilities, such as the following supermarkets,
+                  hospitals and nurseries: Spinneys, Emirates Hospital Day
+                  Surgery & Medical Center, Motor City, Dubai, Jebel Ali Village
+                  Nursery and GEMS Metropole School.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="loc_img">
+                <img
+                  class="img-fluid"
+                  src="img/location/image_map.jpg"
+                  alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about_section" class="contact_us container-fluid p-4 mt-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-1"></div>
+
+            <div class="col-md-10">
+              <div class="contact_inner">
+                <div class="container">
+                  <div class="contact_form_inner">
+                    <div class="contact_field">
+                      <h3 class="Heading">Contact Us</h3>
+                      <p>
+                        Feel Free to contact us any time. We will get back to
+                        you as soon as we can!.
+                      </p>
+                      <!-- Form -->
+                      <div class="enquire-section ps-5 pe-5">
+                        <div class="container">
+                          <form id="contact-form" class="text-center">
+                            <div class="mb-3">
+                              <label for="user_name" class="form-label"
+                                >Name</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control inputStyle shadow-none"
+                                name="user_name"
+                                id="user_name"
+                                placeholder="Name"
+                                autocomplete="off"
+                                required />
+                            </div>
+                            <div class="mb-3">
+                              <label for="user_email" class="form-label"
+                                >Email address</label
+                              >
+                              <input
+                                type="email"
+                                class="form-control inputStyle shadow-none"
+                                name="user_email"
+                                id="user_email"
+                                placeholder="Email Address"
+                                autocomplete="off" />
+                            </div>
+                            <div class="mb-3">
+                              <label for="contact_number" class="form-label"
+                                >Phone Number</label
+                              >
+                              <input
+                                type="tel"
+                                class="form-control inputStyle shadow-none"
+                                id="contact_number"
+                                name="contact_number"
+                                pattern="[0-9]{10}"
+                                placeholder="Phone Number"
+                                oninvalid="setCustomValidity('Please enter a valid phone number. e.g., 12345-67890')"
+                                oninput="setCustomValidity('')"
+                                required />
+                            </div>
+
+                            <div
+                              class="d-flex ps-1 pb-2"
+                              style="font-size: 9px; color: #bfbfbf">
+                              <input
+                                type="checkbox"
+                                checked=""
+                                required=""
+                                class="custom-control-input custom-control-input-green"
+                                id="privacy_check"
+                                data-gtm-form-interact-field-id="0" />
+
+                              <label
+                                class="ps-2 pb-2 custom-control-label"
+                                for="privacy_check">
+                                I consent to the use of my provided data in
+                                accordance with the
+                                <a
+                                  href="privacy_policy.html"
+                                  target="_blank"
+                                  style="font: inherit; color: inherit"
+                                  >privacy policy</a
+                                >.</label
+                              >
+                            </div>
+
+                            <button
+                              type="submit"
+                              class="btn btn-primary submit-btn w-100">
+                              Submit
+                            </button>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="container pb-3">
+                  <div class="contact_info_sec">
+                    <h4>Contact Info</h4>
+                    <div class="d-flex info_single align-items-center">
+                      <i class="fas fa-headset"></i>
+                      <span>+91 123456789</span>
+                    </div>
+                    <div class="d-flex info_single align-items-center">
+                      <i class="fas fa-envelope-open-text"></i>
+                      <span>info@gmail.com</span>
+                    </div>
+                    <div class="d-flex info_single align-items-center">
+                      <i class="fas fa-map-marked-alt"></i>
+                      <span>address</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
