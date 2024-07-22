@@ -43,7 +43,7 @@ const handleFormSubmit = async (
       // alert("Message Sent Final");
       document.getElementById(formId).reset();
       if (response.status === 200) {
-        window.location.href = "thank-you.php";
+        window.location.href = "thank-you.html";
       }
     },
     function (error) {
